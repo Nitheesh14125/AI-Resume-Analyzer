@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-DATABASE_URL = "mysql+pymysql://resume_user:resume123@localhost/resume_analyzer"
+DATABASE_URL = "mysql+pymysql://localhost/resume_analyzer"
 
 engine = create_engine(DATABASE_URL)
 
