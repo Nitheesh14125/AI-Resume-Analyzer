@@ -1,0 +1,286 @@
+{
+  "skill_synonyms": {
+    "python": ["python3", "py"],
+    "java": ["core java", "java se"],
+    "javascript": ["js", "ecmascript"],
+    "typescript": ["ts"],
+    "api_development": ["api development", "rest api", "restful api", "restful service", "web api"],
+    "database": ["database knowledge", "dbms", "rdbms", "sql database"],
+    "sql": ["structured query language"],
+    "postgresql": ["postgres", "postgre"],
+    "node_js": ["nodejs", "node js"],
+    "react": ["reactjs", "react js"],
+    "vue": ["vuejs", "vue js"],
+    "fastapi": ["fast api"],
+    "ci_cd": ["cicd", "continuous integration", "continuous deployment", "continuous delivery"],
+    "ml_ops": ["mlops", "ml ops"],
+    "aws": ["amazon web services"],
+    "gcp": ["google cloud", "google cloud platform"],
+    "kubernetes": ["k8s"],
+    "prompt_engineering": ["prompt design", "prompting"],
+    "incident_response": ["incident handling", "incident management"],
+    "siem": ["siem tools", "splunk", "qradar"],
+    "penetration_testing": ["pen testing", "pentesting", "ethical hacking"],
+    "network_security": ["security networking", "network hardening"],
+    "android": ["android development"],
+    "ios": ["ios development"],
+    "react_native": ["reactnative"],
+    "system_design": ["high level design", "hld"],
+    "leadership": ["team leadership", "technical leadership"],
+    "monitoring": ["observability", "prometheus", "grafana"],
+    "linux": ["unix"],
+    "docker": ["containerization", "containers"],
+    "nlp": ["natural language processing"],
+    "computer_vision": ["cv", "image processing"],
+    "data_visualization": ["dataviz", "dashboarding", "tableau", "power bi"],
+    "manual_testing": ["manual qa"],
+    "automation_testing": ["qa automation", "test automation"],
+    "selenium": ["selenium webdriver"],
+    "junit": ["j unit"],
+    "testng": ["test ng"],
+    "git": ["version control", "gitlab", "github"],
+    "flask": ["flask framework"],
+    "django": ["django framework"],
+    "spring_boot": ["springboot"],
+    "mysql": ["my sql"],
+    "mongodb": ["mongo", "mongo db"],
+    "pandas": ["panda"],
+    "numpy": ["num py"],
+    "scikit_learn": ["sklearn", "scikit learn"],
+    "tensorflow": ["tensor flow"],
+    "pytorch": ["py torch"]
+  },
+  "roles": {
+    "fresher": {
+      "display_name": "Fresher",
+      "skill_groups": {
+        "core_foundation": {"weight": 45, "skills": {"python": 15, "java": 10, "sql": 10, "git": 10}},
+        "problem_solving": {"weight": 25, "skills": {"dsa": 15, "debugging": 10}},
+        "project_exposure": {"weight": 20, "skills": {"api_development": 10, "web_development": 10}},
+        "professional": {"weight": 10, "skills": {"communication": 5, "documentation": 5}}
+      },
+      "course_recommendations": ["Programming Fundamentals", "Data Structures and Algorithms", "SQL Basics for Developers", "Git and Collaborative Development"],
+      "project_ideas": ["Build a CRUD API and deploy it", "Create a portfolio project with authentication"]
+    },
+    "intern": {
+      "display_name": "Intern",
+      "skill_groups": {
+        "core_foundation": {"weight": 45, "skills": {"python": 15, "java": 10, "javascript": 10, "sql": 10}},
+        "delivery": {"weight": 25, "skills": {"git": 10, "debugging": 10, "testing": 5}},
+        "project_exposure": {"weight": 20, "skills": {"web_development": 10, "api_development": 10}},
+        "professional": {"weight": 10, "skills": {"communication": 5, "learning_agility": 5}}
+      },
+      "course_recommendations": ["Web Development Bootcamp", "REST API Development", "Software Testing Essentials", "Professional Communication for Engineers"],
+      "project_ideas": ["Internship-style issue tracker clone", "Mini analytics dashboard with SQL backend"]
+    },
+    "junior-software-engineer": {
+      "display_name": "Junior Software Engineer",
+      "skill_groups": {
+        "core": {"weight": 40, "skills": {"python": 12, "java": 12, "javascript": 8, "sql": 8}},
+        "engineering": {"weight": 25, "skills": {"api_development": 10, "testing": 8, "git": 7}},
+        "delivery": {"weight": 20, "skills": {"docker": 8, "linux": 6, "ci_cd": 6}},
+        "soft": {"weight": 15, "skills": {"communication": 7, "teamwork": 8}}
+      },
+      "course_recommendations": ["Backend Engineering Essentials", "Unit Testing in Practice", "Docker for Developers", "CI/CD Fundamentals"],
+      "project_ideas": ["Build and test a microservice", "Automate deployment pipeline for a web app"]
+    },
+    "software-engineer": {
+      "display_name": "Software Engineer",
+      "skill_groups": {
+        "core": {"weight": 35, "skills": {"python": 10, "java": 10, "javascript": 8, "sql": 7}},
+        "system_building": {"weight": 30, "skills": {"api_development": 10, "database": 10, "system_design": 10}},
+        "delivery": {"weight": 20, "skills": {"docker": 8, "ci_cd": 6, "git": 6}},
+        "operations": {"weight": 15, "skills": {"linux": 7, "monitoring": 8}}
+      },
+      "course_recommendations": ["System Design Foundations", "Database Design and Optimization", "Production Engineering", "Monitoring and Observability"],
+      "project_ideas": ["Design a scalable booking service", "Add observability to an API platform"]
+    },
+    "backend-developer": {
+      "display_name": "Backend Developer",
+      "skill_groups": {
+        "core_skills": {"weight": 50, "skills": {"python": 20, "api_development": 15, "database": 15}},
+        "frameworks": {"weight": 25, "skills": {"fastapi": 9, "flask": 8, "django": 8, "spring_boot": 8}},
+        "databases": {"weight": 15, "skills": {"mysql": 5, "postgresql": 5, "mongodb": 5, "sqlite": 4}},
+        "tools": {"weight": 10, "skills": {"docker": 4, "git": 3, "linux": 3}}
+      },
+      "course_recommendations": ["Python Backend Development Fundamentals", "REST API Development", "Database Design and SQL", "Docker for Developers"],
+      "project_ideas": ["Build a FastAPI REST service with JWT", "Containerize and deploy a backend service"]
+    },
+    "frontend-developer": {
+      "display_name": "Frontend Developer",
+      "skill_groups": {
+        "core": {"weight": 45, "skills": {"html": 12, "css": 10, "javascript": 13, "typescript": 10}},
+        "frameworks": {"weight": 30, "skills": {"react": 12, "angular": 9, "vue": 9}},
+        "state_and_api": {"weight": 15, "skills": {"api_integration": 8, "state_management": 7}},
+        "tooling": {"weight": 10, "skills": {"git": 4, "testing": 3, "performance_optimization": 3}}
+      },
+      "course_recommendations": ["Modern JavaScript and TypeScript", "React Development", "Frontend Performance Tuning", "Testing Frontend Applications"],
+      "project_ideas": ["Build a responsive admin dashboard", "Create a real-time frontend consuming REST APIs"]
+    },
+    "full-stack-developer": {
+      "display_name": "Full Stack Developer",
+      "skill_groups": {
+        "frontend": {"weight": 30, "skills": {"html": 8, "css": 7, "javascript": 8, "react": 7}},
+        "backend": {"weight": 35, "skills": {"node_js": 10, "python": 10, "api_development": 8, "sql": 7}},
+        "data_and_storage": {"weight": 20, "skills": {"mysql": 7, "postgresql": 7, "mongodb": 6}},
+        "dev_tools": {"weight": 15, "skills": {"docker": 6, "git": 5, "ci_cd": 4}}
+      },
+      "course_recommendations": ["Full Stack Web Development", "Backend APIs with Node/Python", "Databases for Full Stack Apps", "DevOps Basics for Developers"],
+      "project_ideas": ["Build an end-to-end SaaS clone", "Deploy full-stack app with CI/CD"]
+    },
+    "data-analyst": {
+      "display_name": "Data Analyst",
+      "skill_groups": {
+        "analysis": {"weight": 45, "skills": {"sql": 18, "excel": 12, "data_cleaning": 15}},
+        "programming": {"weight": 20, "skills": {"python": 10, "pandas": 10}},
+        "visualization": {"weight": 25, "skills": {"data_visualization": 15, "tableau": 10, "power_bi": 10}},
+        "business": {"weight": 10, "skills": {"communication": 5, "storytelling": 5}}
+      },
+      "course_recommendations": ["SQL for Data Analysis", "Python for Analytics", "Data Visualization with Tableau/Power BI", "Business Analytics Fundamentals"],
+      "project_ideas": ["Build KPI dashboard from sales data", "Analyze churn and present actionable insights"]
+    },
+    "data-scientist": {
+      "display_name": "Data Scientist",
+      "skill_groups": {
+        "core": {"weight": 45, "skills": {"python": 15, "pandas": 10, "numpy": 10, "sql": 10}},
+        "ml": {"weight": 30, "skills": {"scikit_learn": 12, "tensorflow": 9, "pytorch": 9}},
+        "statistics": {"weight": 15, "skills": {"statistics": 8, "hypothesis_testing": 7}},
+        "presentation": {"weight": 10, "skills": {"data_visualization": 6, "communication": 4}}
+      },
+      "course_recommendations": ["Applied Data Science", "Machine Learning with Scikit-learn", "Deep Learning Fundamentals", "Statistics for Data Science"],
+      "project_ideas": ["End-to-end ML pipeline with model monitoring", "Build a recommendation system"]
+    },
+    "machine-learning-engineer": {
+      "display_name": "Machine Learning Engineer",
+      "skill_groups": {
+        "ml_core": {"weight": 40, "skills": {"python": 15, "scikit_learn": 10, "tensorflow": 8, "pytorch": 7}},
+        "deployment": {"weight": 25, "skills": {"docker": 9, "kubernetes": 8, "ml_ops": 8}},
+        "data": {"weight": 20, "skills": {"sql": 8, "feature_engineering": 6, "data_pipelines": 6}},
+        "ops": {"weight": 15, "skills": {"linux": 6, "monitoring": 5, "ci_cd": 4}}
+      },
+      "course_recommendations": ["MLOps Engineering", "Model Deployment on Kubernetes", "Feature Engineering", "Production ML Systems"],
+      "project_ideas": ["Deploy ML model as scalable API", "Build model retraining workflow with drift checks"]
+    },
+    "ai-engineer": {
+      "display_name": "AI Engineer",
+      "skill_groups": {
+        "ai_core": {"weight": 40, "skills": {"python": 12, "tensorflow": 10, "pytorch": 10, "nlp": 8}},
+        "genai": {"weight": 25, "skills": {"llm": 10, "prompt_engineering": 8, "rag": 7}},
+        "deployment": {"weight": 20, "skills": {"api_development": 7, "docker": 7, "cloud_ai": 6}},
+        "data_and_eval": {"weight": 15, "skills": {"evaluation": 8, "sql": 7}}
+      },
+      "course_recommendations": ["Generative AI Engineering", "LLM Application Development", "Prompt Engineering and RAG", "Deploying AI Systems"],
+      "project_ideas": ["Build a RAG assistant over documents", "Deploy an AI chatbot with evaluation metrics"]
+    },
+    "cyber-security-analyst": {
+      "display_name": "Cyber Security Analyst",
+      "skill_groups": {
+        "security_core": {"weight": 45, "skills": {"network_security": 15, "siem": 12, "incident_response": 10, "cryptography": 8}},
+        "assessment": {"weight": 25, "skills": {"penetration_testing": 10, "security_auditing": 8, "threat_modeling": 7}},
+        "platform": {"weight": 20, "skills": {"linux": 8, "python": 7, "scripting": 5}},
+        "compliance": {"weight": 10, "skills": {"risk_management": 5, "documentation": 5}}
+      },
+      "course_recommendations": ["Cybersecurity Fundamentals", "SIEM and Incident Response", "Penetration Testing Basics", "Security Operations"],
+      "project_ideas": ["Build incident response playbooks", "Simulate attack detection with SIEM logs"]
+    },
+    "soc-analyst": {
+      "display_name": "SOC Analyst",
+      "skill_groups": {
+        "monitoring": {"weight": 45, "skills": {"siem": 15, "log_analysis": 10, "incident_response": 10, "alert_triage": 10}},
+        "network": {"weight": 20, "skills": {"networking": 10, "network_security": 10}},
+        "platform": {"weight": 20, "skills": {"linux": 8, "python": 6, "scripting": 6}},
+        "process": {"weight": 15, "skills": {"threat_hunting": 8, "reporting": 7}}
+      },
+      "course_recommendations": ["SOC Analyst Career Path", "Threat Hunting Essentials", "SIEM Operations", "Incident Response Management"],
+      "project_ideas": ["Create SOC alert triage workflow", "Threat hunting lab using open-source telemetry"]
+    },
+    "cloud-engineer": {
+      "display_name": "Cloud Engineer",
+      "skill_groups": {
+        "cloud_platforms": {"weight": 45, "skills": {"aws": 18, "azure": 14, "gcp": 13}},
+        "containers": {"weight": 20, "skills": {"docker": 10, "kubernetes": 10}},
+        "infra": {"weight": 20, "skills": {"terraform": 10, "iac": 10}},
+        "operations": {"weight": 15, "skills": {"linux": 8, "monitoring": 7}}
+      },
+      "course_recommendations": ["Cloud Engineering Fundamentals", "Terraform and Infrastructure as Code", "Kubernetes in Production", "Cloud Monitoring and Reliability"],
+      "project_ideas": ["Provision infra with Terraform", "Deploy HA app on cloud Kubernetes"]
+    },
+    "devops-engineer": {
+      "display_name": "DevOps Engineer",
+      "skill_groups": {
+        "containers_and_orchestration": {"weight": 40, "skills": {"docker": 20, "kubernetes": 20}},
+        "cloud_and_infra": {"weight": 30, "skills": {"aws": 15, "terraform": 10, "linux": 5}},
+        "automation": {"weight": 20, "skills": {"ci_cd": 10, "scripting": 10}},
+        "observability": {"weight": 10, "skills": {"monitoring": 10}}
+      },
+      "course_recommendations": ["DevOps Engineer Roadmap", "CI/CD Pipelines in Practice", "Docker and Kubernetes", "Infrastructure as Code with Terraform"],
+      "project_ideas": ["Build CI/CD for microservices", "Implement monitoring stack with alerts"]
+    },
+    "android-developer": {
+      "display_name": "Android Developer",
+      "skill_groups": {
+        "language": {"weight": 40, "skills": {"kotlin": 20, "java": 20}},
+        "android_stack": {"weight": 30, "skills": {"android": 15, "jetpack": 8, "mvvm": 7}},
+        "api_and_data": {"weight": 20, "skills": {"rest_api": 10, "sqlite": 5, "firebase": 5}},
+        "tooling": {"weight": 10, "skills": {"git": 5, "testing": 5}}
+      },
+      "course_recommendations": ["Android Development with Kotlin", "Modern Android Architecture", "API Integration in Mobile Apps", "Testing Android Apps"],
+      "project_ideas": ["Build offline-first Android app", "Create Android app with clean architecture"]
+    },
+    "ios-developer": {
+      "display_name": "iOS Developer",
+      "skill_groups": {
+        "language": {"weight": 40, "skills": {"swift": 25, "objective_c": 15}},
+        "ios_stack": {"weight": 30, "skills": {"ios": 15, "swiftui": 8, "uikit": 7}},
+        "api_and_data": {"weight": 20, "skills": {"rest_api": 10, "core_data": 5, "firebase": 5}},
+        "tooling": {"weight": 10, "skills": {"git": 5, "testing": 5}}
+      },
+      "course_recommendations": ["iOS Development with Swift", "SwiftUI in Practice", "Mobile API Integration", "Testing iOS Apps"],
+      "project_ideas": ["Build iOS productivity app", "Implement secure auth flow in iOS app"]
+    },
+    "system-administrator": {
+      "display_name": "System Administrator",
+      "skill_groups": {
+        "system_core": {"weight": 45, "skills": {"linux": 20, "windows_server": 12, "scripting": 13}},
+        "networking": {"weight": 25, "skills": {"networking": 12, "dns": 7, "firewalls": 6}},
+        "operations": {"weight": 20, "skills": {"monitoring": 10, "backup_recovery": 10}},
+        "security": {"weight": 10, "skills": {"access_control": 5, "patch_management": 5}}
+      },
+      "course_recommendations": ["Linux Administration", "Systems and Network Operations", "Monitoring and Incident Management", "Security for SysAdmins"],
+      "project_ideas": ["Automate server provisioning", "Build backup and disaster recovery drill"]
+    },
+    "network-engineer": {
+      "display_name": "Network Engineer",
+      "skill_groups": {
+        "network_core": {"weight": 50, "skills": {"networking": 20, "routing_switching": 15, "tcp_ip": 15}},
+        "security": {"weight": 20, "skills": {"network_security": 10, "firewalls": 10}},
+        "automation": {"weight": 15, "skills": {"python": 8, "scripting": 7}},
+        "operations": {"weight": 15, "skills": {"monitoring": 8, "incident_response": 7}}
+      },
+      "course_recommendations": ["Network Engineering Fundamentals", "Routing and Switching", "Network Security Operations", "Network Automation with Python"],
+      "project_ideas": ["Design branch office network", "Build network monitoring and alerting setup"]
+    },
+    "tech-lead": {
+      "display_name": "Tech Lead",
+      "skill_groups": {
+        "architecture": {"weight": 35, "skills": {"system_design": 20, "architecture_patterns": 15}},
+        "execution": {"weight": 30, "skills": {"api_development": 10, "database": 10, "ci_cd": 10}},
+        "leadership": {"weight": 25, "skills": {"leadership": 15, "mentoring": 10}},
+        "operations": {"weight": 10, "skills": {"monitoring": 5, "incident_response": 5}}
+      },
+      "course_recommendations": ["Technical Leadership", "System Design for Leaders", "Engineering Management Essentials", "Reliable Systems in Production"],
+      "project_ideas": ["Lead migration to microservices", "Define engineering standards and onboarding playbook"]
+    },
+    "senior-software-engineer": {
+      "display_name": "Senior Software Engineer",
+      "skill_groups": {
+        "core_engineering": {"weight": 35, "skills": {"python": 10, "java": 10, "javascript": 7, "sql": 8}},
+        "architecture": {"weight": 30, "skills": {"system_design": 15, "scalability": 8, "performance_optimization": 7}},
+        "delivery": {"weight": 20, "skills": {"ci_cd": 8, "docker": 6, "monitoring": 6}},
+        "leadership": {"weight": 15, "skills": {"mentoring": 8, "communication": 7}}
+      },
+      "course_recommendations": ["Advanced System Design", "Scalable Software Architecture", "Performance Engineering", "Mentorship for Senior Engineers"],
+      "project_ideas": ["Refactor monolith to modular architecture", "Introduce reliability and performance SLOs"]
+    }
+  }
+}
